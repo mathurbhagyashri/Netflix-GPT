@@ -3,8 +3,11 @@
 - React + Vite
 - configured tailwind
 -Header
+-Routing of App
 -Login form
 - Sign up Form
+-Form Validation
+-useRef Hook
 
 # Features
 - Login/Sign Up
