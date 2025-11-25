@@ -2,6 +2,9 @@
 
 - React + Vite
 - configured tailwind
+-Header
+-Login form
+- Sign up Form
 
 # Features
 - Login/Sign Up
