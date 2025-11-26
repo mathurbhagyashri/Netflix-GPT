@@ -16,9 +16,8 @@ const password= useRef(null);
   setIsSignInForm(!isSignInForm)
   }
 
-  const handleButtonClick=()=>{
-   const message= checkValidData(name.current.value,email.current.value,password.current.value);
-console.log("name.current.value",name.current.value);
+  const handleButtonClick=()=>{    
+   const message= isSignInForm ? checkValidData("",email.current.value,password.current.value) : checkValidData(name.current.value,email.current.value,password.current.value);
 
    console.log("message",message);
    setErrorMessage(message)
@@ -42,7 +41,7 @@ console.log("name.current.value",name.current.value);
         /> } 
 
         <input
-        ref={email}
+          ref={email}
           type="text"
           placeholder="Email Address"
           className="p-4 my-4 bg-black/20 w-full text-white border border-gray rounded focus:border-white-500 focus:ring-2 focus:ring-white-600 focus:outline-none "
